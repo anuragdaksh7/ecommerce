@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 exports.connectMongoose = () => {
-	mongoose.connect("mongodb+srv://root:amaterasu@cluster0.mk9n2n7.mongodb.net/eComm").then(e=>console.log(`connected to mongodb: ${e.connection.host}`)).catch(e => console.log(e));
+	mongoose.connect(<your connection string>).then(e=>console.log(`connected to mongodb: ${e.connection.host}`)).catch(e => console.log(e));
 }
 
 
